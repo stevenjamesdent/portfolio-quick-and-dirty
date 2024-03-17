@@ -87,7 +87,7 @@ export const career : EmploymentPosition[] = [
     },
     {
         company: 'Perfect Image IT Solutions',
-        description: "I started at Perfect Image right out of University and eventually became the sole Frontend Developer at the company. I was responsible for all UI Design & Development, Graphic Design, and a number of other creative responsibilities. This was a varied role which allowed me expand my skillset beyond just Frontend Development, though that always remained my primary focus.",
+        description: "I started at Perfect Image right out of University and eventually became the sole Frontend Developer at the company. I was responsible for all UI Design & Development, Graphic Design, and a number of other creative responsibilities. This was a varied role which allowed me to expand my skillset beyond just Frontend Development, though that always remained my primary focus.",
         endYear: 2021,
         id: 'perfect-image',
         location: 'On-site',
