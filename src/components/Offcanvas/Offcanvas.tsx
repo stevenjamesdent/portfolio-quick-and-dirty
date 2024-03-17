@@ -25,7 +25,7 @@ const Offcanvas = ({active, children, className, style, onDismiss}: Props) : Rea
         <aside style={style} className={clsx(class_names, styles.offcanvas)}>
             <div className='flex items-center justify-between p-10'>
                 <Link href='/'>
-                    <Image src={logo} alt="Steven James Dent - UI Engineer" />
+                    <Image className='max-mobile:max-w-[275px]' src={logo} alt="Steven James Dent - UI Engineer" />
                 </Link>
                 <Button title='Dismiss Menu' onClick={onDismiss} unstyled>
                     <PinLeftIcon width={30} height={30} />

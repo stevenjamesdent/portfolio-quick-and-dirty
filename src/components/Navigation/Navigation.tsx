@@ -79,7 +79,7 @@ const Navigation = ({ className, style, items, cta } : Props): React.ReactElemen
         <>
             <header ref={navbar_ref} className={clsx(class_names, styles.navbar)} style={style}>
                 <Link href='/'>
-                    <Image src={logo} alt="Steven James Dent - UI Engineer" />
+                    <Image className='max-mobile:max-w-[275px]' src={logo} alt="Steven James Dent - UI Engineer" />
                 </Link>
                 <nav className={styles.menu}>
                     <ul>

@@ -25,7 +25,7 @@ const Showcase = ({className, style} : Props): React.ReactElement => {
                     className='mt-5'
                     href='https://github.com/stevenjamesdent/snippr-backend-sample'
                     target='_blank'
-                    title='View Code Sample'
+                    title='Code Sample'
                 />
             </div>
 
@@ -34,7 +34,7 @@ const Showcase = ({className, style} : Props): React.ReactElement => {
                 <p>
                     The two mobile applications which I designed and built for SNIPPR - one for customers and one for hair stylists. The apps are built with React Native + Expo and are currently production ready and available on both iOS and Android. The apps use a variety of SDKs and extensions, however the UIs are completely custom.
                 </p>
-                <div className="flex justify-center gap-5">
+                <div className="flex max-mobile:flex-col justify-center mobile:gap-5">
                     <Button
                         className='mt-5'
                         href='https://github.com/stevenjamesdent/snippr-app-sample'
@@ -55,7 +55,7 @@ const Showcase = ({className, style} : Props): React.ReactElement => {
                 <p>
                     The public facing marketing site for SNIPPR, while relatively small and simple for the MVP. I designed and then built this site in NextJS, which is deployed on Vercel (previously on Azure). The site pulls content from Storyblok via the Storyblok API, content is migrated from staging to production via Github Actions and the Storyblok CLI.
                 </p>
-                <div className="flex justify-center gap-5">
+                <div className="flex max-mobile:flex-col justify-center mobile:gap-5">
                     <Button
                         className='mt-5'
                         href='https://github.com/stevenjamesdent/snippr-nextjs'
