@@ -1,0 +1,8 @@
+@use '@/styles/settings' as *;
+@use '@/styles/utils' as *;
+
+.wrapper {
+    padding: ($base-spacing * 2) var(--gutter-navbar);
+    background-color: $midnight;
+    border-top: 0.5px solid $ghost_white;
+}

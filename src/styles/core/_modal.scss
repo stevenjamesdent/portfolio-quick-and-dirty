@@ -1,0 +1,59 @@
+// -------------------------------------------
+// ---------- Custom Modal Styling -----------
+// -------------------------------------------
+
+@use '@/styles/settings' as *;
+@use '@/styles/utils' as *;
+
+// Third party library hence the nasty !importants
+
+
+.ReactModal {
+    $this: &;
+
+    &__Body--open {
+        overflow: hidden;
+    }
+
+    &__Content {
+        border: none !important;
+        inset: unset !important;
+        max-height: 90vh;
+        max-width: 90vw;
+        opacity: 0;
+        transform: scale(0.95);
+        transition: all 0.25s ease;
+    }
+
+    &__Overlay {
+        align-items: center;
+        backdrop-filter: blur(5px);
+        background-color: transparentize($midnight, 0.5) !important;
+        display: flex;
+        justify-content: center;
+        transition: all 0.25s ease;
+
+        &--after-open {
+            opacity: 1;
+            
+            #{$this}__Content {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        &--before-close {
+            opacity: 0;
+            
+            #{$this}__Content {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    &Portal {
+        position: fixed;
+        z-index: get-layer(top);
+    }
+}

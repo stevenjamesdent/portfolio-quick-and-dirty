@@ -1,0 +1,77 @@
+@use '@/styles/settings' as *;
+@use '@/styles/utils' as *;
+
+.button {
+    --button-border: var(--button-bg);
+
+    $this: &;
+    @include font-size(standard);
+    align-items: center;
+    background: var(--button-bg);
+    border: 0.5px solid var(--button-border);
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: $weight-regular;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    outline: none;
+    padding: ($base-spacing / 1.5) ($base-spacing * 1.5);
+    position: relative;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.35, 1);
+    user-select: none;
+
+    &:not(#{$this}_unstyled) {
+        color: var(--button-color);
+    }
+
+    &_small {
+        font-size: var(--font-small);
+        padding: ($base-spacing / 2) ($base-spacing * 2);
+    }
+
+    &_primary {
+        --button-bg: #{$white};
+        --button-color: #{$twilight};
+
+        &:hover {
+            --button-bg: #{$twilight};
+            --button-border: #{$cyan};
+            --button-color: #{$cyan};
+        }
+    }
+
+    &_secondary {
+        --button-bg: #{$white};
+        --button-color: #{$twilight};
+
+        &:hover {
+            --button-bg: #{$twilight};
+            --button-border: #{$green};
+            --button-color: #{$green};
+        }
+    }
+
+    &_tertiary {
+        --button-bg: #{$white};
+        --button-color: #{$twilight};
+
+        &:hover {
+            --button-bg: #{$twilight};
+            --button-border: #{$red};
+            --button-color: #{$red};
+        }
+    }
+
+    &_shadowed {
+        box-shadow: 10px 10px 20px 0 transparentize($midnight, 0.5);
+    }
+
+    &_unstyled {
+        background: none;
+        border: none;
+        display: inline-flex;
+        outline: none;
+        padding: unset;
+    }
+}

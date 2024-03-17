@@ -1,0 +1,14 @@
+@use '@/styles/settings' as *;
+@use '@/styles/utils' as *;
+
+.tooltip {
+    background-color: $white;
+    border-radius: $base-border-radius;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.15);
+    color: $black;
+    max-width: 250px;
+    padding: $base-spacing;
+    text-align: center;
+    z-index: get-layer(top);
+    font-size: var(--font-small);
+}

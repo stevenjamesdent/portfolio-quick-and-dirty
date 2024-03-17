@@ -1,0 +1,47 @@
+@use '@/styles/settings' as *;
+@use '@/styles/utils' as *;
+
+.section {
+    @include responsive-modifiers(section) {
+        padding-bottom: var(--section-spacing);
+        padding-top: var(--section-spacing);
+        position: relative;
+        width: 100%;
+
+        &-collapse {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        &-banner-offset {
+            margin-top: calc(var(--banner-offset) * -1) !important;
+            padding-top: calc(var(--banner-offset) + var(--section-spacing));
+        }
+    }
+}
+
+.gutter {
+    @include responsive-modifiers(gutter) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: (calc(min(100vw, $max-site-width) - (var(--gutter-medium) * 2)));
+        
+        &-profile {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: calc(min(100vw, $max-site-width) - (var(--gutter-profile) * 2));
+        }
+        
+        &-large {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: calc(min(100vw, $max-site-width) - (var(--gutter-large) * 2));
+        }
+        
+        &-small {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: calc(min(100vw, $max-site-width) - (var(--gutter-small) * 2));
+        }
+    }
+}

@@ -1,0 +1,31 @@
+$cyan: #22DFFC;
+$dusk: #393B3F;
+$ghost_white: transparentize(#fff, 0.75);
+$green: #48E07E;
+$grey_dark: #4D4D4D;
+$grey_light: #CCCCCC;
+$grey_x_dark: #333333;
+$grey_x_light: #E6E6E6;
+$grey: #808080;
+$midnight: #191B21;
+$off_white: #F2F2F2;
+$red: #FF6B6B;
+$twilight: #21242B;
+$white: #FFFFFF;
+
+$colors: (
+    cyan: $cyan,
+    dusk: $dusk,
+    ghost-white: $ghost_white,
+    green: $green,
+    grey-dark: $grey_dark,
+    grey-light: $grey_light,
+    grey-x-dark: $grey_x_dark,
+    grey-x-light: $grey_x_light,
+    grey: $grey,
+    midnight: $midnight,
+    off-white: $off_white,
+    red: $red,
+    twilight: $twilight,
+    white: $white,
+);

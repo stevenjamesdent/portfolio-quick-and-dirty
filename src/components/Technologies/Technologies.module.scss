@@ -1,0 +1,28 @@
+@use '@/styles/settings' as *;
+@use '@/styles/utils' as *;
+
+.wrapper {
+
+}
+
+.filter {
+    align-items: center;
+    background: $off_white;
+    display: inline-flex;
+    gap: $base-spacing / 2;
+    padding: ($base-spacing / 2) $base-spacing;
+
+    &_active {
+        background-color: $midnight;
+        color: $cyan;
+    }
+
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+.tech {
+    background-color: $off_white;
+    padding: ($base-spacing / 4) ($base-spacing / 2);
+}
