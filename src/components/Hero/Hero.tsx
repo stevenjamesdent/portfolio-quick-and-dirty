@@ -21,7 +21,7 @@ const Hero = ({className, style} : Props): React.ReactElement => {
             <div className={clsx(styles.wrapper, conditionalClassNames)} style={style}>
                 <div className={styles.content}>
                     <Heading tag='h1' mega collapse>Full-stack UI Engineer</Heading>
-                    <Heading tag='h2' appearance='h5'>Based in the UK, Available for new positions</Heading>
+                    <Heading className='max-mobile:hidden' tag='h2' appearance='h5'>Based in the UK, Available for new positions</Heading>
                     <p>
                         I&apos;m Steven, I&apos;m a UI Engineer with <strong>10 years of industry experience</strong>. I pride myself on delivering performant and innovative products with code so clean you could eat off of it - just as long as there&apos;s a <span className='text-cyan'>{'<table>'}</span> in there somewhere.
                     </p>
@@ -33,12 +33,12 @@ const Hero = ({className, style} : Props): React.ReactElement => {
                 </div>
                 <Image className={styles.image} src={photo} alt="Photograph of Steven" />
             </div>
-            <div className='flex justify-center tablet:justify-between px-gutter-small tablet-l:px-gutter laptop:px-gutter-large gap-20 tablet:gap-5 py-5 text-center text-white bg-midnight bg-opacity-90'>
+            <div className='flex max-mobile:flex-col justify-center tablet:justify-between px-gutter-small tablet-l:px-gutter laptop:px-gutter-large gap-20 tablet:gap-5 py-5 text-center text-white bg-midnight bg-opacity-90'>
                 <div>
                     <Heading tag='span' appearance='h6'>BA (Hons) In Web & Multimedia</Heading>
                     <span className='opacity-80'>First Class Honours</span>
                 </div>
-                <div className='max-tablet:hidden'>
+                <div className='mobile:hidden tablet:block'>
                     <Heading tag='span' appearance='h6'>10 Years Industry Experience</Heading>
                     <span className='opacity-80'>Frontend, Backend, and Design</span>
                 </div>

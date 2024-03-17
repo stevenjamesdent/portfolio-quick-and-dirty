@@ -15,7 +15,7 @@ const Footer = ({className, style} : Props): React.ReactElement => {
     const conditionalClassNames = classNames(className, {});
 
     return (
-        <footer className={clsx(styles.wrapper, conditionalClassNames, 'flex justify-between items-center')} style={style}>
+        <footer className={clsx(styles.wrapper, conditionalClassNames, 'flex max-mobile:flex-col mobile:justify-between gap-5 items-center')} style={style}>
             <Link className='inline-flex gap-2 items-center text-white hover:text-cyan hover:underline transition-colors' href='https://linkedin.com/in/stevenjdent' target='_blank'>
                 <LinkedInLogoIcon width={20} height={20} />
                 Connect on LinkedIn
