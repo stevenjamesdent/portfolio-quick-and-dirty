@@ -20,7 +20,7 @@ const Footer = ({className, style} : Props): React.ReactElement => {
                 <LinkedInLogoIcon width={20} height={20} />
                 Connect on LinkedIn
             </Link>
-            <Link className='inline-flex gap-2 items-center text-white hover:text-cyan hover:underline transition-colors' href='/CV_Steven_James_Dent_UI_Engineer.pdf' download='CV - Steven James Dent - UI Engineer'>
+            <Link className='inline-flex max-mobile:flex-row-reverse gap-2 items-center text-white hover:text-cyan hover:underline transition-colors' href='/CV_Steven_James_Dent_UI_Engineer.pdf' download='CV - Steven James Dent - UI Engineer'>
                 Download my CV
                 <DownloadIcon width={20} height={20} />
             </Link>

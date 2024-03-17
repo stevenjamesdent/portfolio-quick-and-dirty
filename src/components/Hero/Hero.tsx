@@ -33,7 +33,7 @@ const Hero = ({className, style} : Props): React.ReactElement => {
                 </div>
                 <Image className={styles.image} src={photo} alt="Photograph of Steven" />
             </div>
-            <div className='flex max-mobile:flex-col justify-center tablet:justify-between px-gutter-small tablet-l:px-gutter laptop:px-gutter-large gap-20 tablet:gap-5 py-5 text-center text-white bg-midnight bg-opacity-90'>
+            <div className='flex max-mobile:flex-col justify-center tablet:justify-between px-gutter-small tablet-l:px-gutter laptop:px-gutter-large gap-5 mobile:gap-20 tablet:gap-5 py-5 text-center text-white bg-midnight bg-opacity-90'>
                 <div>
                     <Heading tag='span' appearance='h6'>BA (Hons) In Web & Multimedia</Heading>
                     <span className='opacity-80'>First Class Honours</span>
