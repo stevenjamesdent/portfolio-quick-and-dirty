@@ -81,7 +81,7 @@ const Career = ({className, style} : Props): React.ReactElement => {
                                 <div className='text-cyan'>{position.startYear} - {position.endYear}, {position.location}</div>
                                 <p className='my-5'>{position.description}</p>
                                 <Heading tag='h4' appearance='h6'>Responsibilities</Heading>
-                                <ul>{position.responsibilities.map((item) => (<li>{item}</li>))}</ul>
+                                <ul>{position.responsibilities.map((item, i) => (<li key={i}>{item}</li>))}</ul>
                             </div>
                             <div className="laptop:basis-2/6 bg-midnight rounded-2xl p-8">
                                 <Heading tag='span' appearance='h6' collapse>Notable Technologies</Heading>
