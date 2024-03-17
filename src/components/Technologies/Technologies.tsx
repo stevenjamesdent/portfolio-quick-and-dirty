@@ -76,7 +76,7 @@ const Technologies = ({className, style, active, onClose, onOpen} : Props): Reac
                     <Heading tag='span' appearance='h3'>Skills & Technologies</Heading>
                     <Button onClick={onClose} unstyled><Cross1Icon width={25} height={25} /></Button>
                 </div>
-                <p>Take a look at the key skills and technologies I've used throughout my career. Feel free to filter by discipline/area!</p>
+                <p>Take a look at the key skills and technologies I&apos;ve used throughout my career. Feel free to filter by discipline/area!</p>
                 <div className='flex gap-5 items-center flex-wrap mt-5'>
                     {
                         Object.keys(filters).map((filterKey) => {
@@ -84,6 +84,7 @@ const Technologies = ({className, style, active, onClose, onOpen} : Props): Reac
 
                             return (
                                 <button
+                                    key={filterKey}
                                     className={clsx(styles.filter, active && styles.filter_active)}
                                     onClick={() => handleFilterChange(filterKey as keyof typeof filters)}
                                 >
@@ -96,8 +97,8 @@ const Technologies = ({className, style, active, onClose, onOpen} : Props): Reac
                 <Divider className='opacity-20 my-8' />
                 <div className='flex flex-wrap gap-2'>
                     {
-                        filteredTechnologies.map((technology) => (
-                            <span className={styles.tech}>{technology.name}</span>
+                        filteredTechnologies.map((technology, i) => (
+                            <span key={'tech' + i} className={styles.tech}>{technology.name}</span>
                         ))
                     }
                 </div>

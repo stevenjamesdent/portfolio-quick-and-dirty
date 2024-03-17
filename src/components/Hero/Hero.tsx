@@ -23,7 +23,7 @@ const Hero = ({className, style} : Props): React.ReactElement => {
                     <Heading tag='h1' mega collapse>Full-stack UI Engineer</Heading>
                     <Heading tag='h2' appearance='h5'>Based in the UK, Available for new positions</Heading>
                     <p>
-                        I'm Steven, I'm a UI Engineer with <strong>10 years of industry experience</strong>. I pride myself on delivering performant and innovative products with code so clean you could eat off of it - just as long as there's a <span className='text-cyan'>{'<table>'}</span> in there somewhere.
+                        I&apos;m Steven, I&apos;m a UI Engineer with <strong>10 years of industry experience</strong>. I pride myself on delivering performant and innovative products with code so clean you could eat off of it - just as long as there&apos;s a <span className='text-cyan'>{'<table>'}</span> in there somewhere.
                     </p>
                     <div className='flex items-center gap-5 mt-8 flex-wrap'>
                         <div className='py-2 px-5 bg-cyan bg-opacity-20 border-solid border-cyan border-s text-nowrap' >Frontend Development</div>

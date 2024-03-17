@@ -52,11 +52,13 @@ const Career = ({className, style} : Props): React.ReactElement => {
                 <Menu className='text-center mb-5 max-mobile-l:hidden' horizontal>
                     {
                         career.map((position: EmploymentPosition) => (
-                            <Menu.Item
-                                active={activePosition === position.id}
-                                onClick={() => setActivePosition(position.id)}
-                                title={position.company}
-                            />
+                            <React.Fragment key={position.id}>
+                                <Menu.Item
+                                    active={activePosition === position.id}
+                                    onClick={() => setActivePosition(position.id)}
+                                    title={position.company}
+                                />
+                            </React.Fragment>
                         ))
                     }
                 </Menu>
@@ -73,7 +75,7 @@ const Career = ({className, style} : Props): React.ReactElement => {
 
                 {
                     career.map((position: EmploymentPosition) => (
-                        <div className={`${activePosition === position.id ? 'flex' : 'hidden'} max-laptop:flex-col mt-10 gap-10 laptop:gap-20`}>
+                        <div key={position.id} className={`${activePosition === position.id ? 'flex' : 'hidden'} max-laptop:flex-col mt-10 gap-10 laptop:gap-20`}>
                             <div className='laptop:basis-4/6'>
                                 <Heading tag='h3' appearance='h5'>{position.role} at {position.company}</Heading>
                                 <div className='text-cyan'>{position.startYear} - {position.endYear}, {position.location}</div>
@@ -87,7 +89,7 @@ const Career = ({className, style} : Props): React.ReactElement => {
                                 <ul className="flex flex-wrap gap-3">
                                     {
                                         position.technologies.map((item) => (
-                                            <li className="px-2 rounded-sm bg-red bg-opacity-40">{item}</li>
+                                            <li key={position.id} className="px-2 rounded-sm bg-red bg-opacity-40">{item}</li>
                                         ))
                                     }
                                 </ul>

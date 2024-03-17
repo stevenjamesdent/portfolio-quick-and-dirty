@@ -41,9 +41,9 @@ export default function Home() {
 									<p>I first started working in the industry during my second year of University, being someone who has always learned better by doing rather than listening, and being confident enough in my skills at the time to sell them, I started freelancing outside of University hours. I worked with a variety of different clients, from solicitors and photographers to heritage charities and more.</p>
 									<p>In my final year of Uni, I secured a position at an IT Solutions company ahead of my graduation where I had the chance to work across just about every creative area of that business. I became experienced in UI Design, UI Development, Graphics Design, Brand Development, and started to dabble in Backend Development - albeit to a limited degree.</p>
 									<p>In my next role I focused entirely on UI Development and honed my skills as a modern web developer. Testing, maintaining, and optimising websites became second nature at this point, and I got a real taste for NodeJS-based backend development.</p>
-									<p>I've always enjoyed my passion projects, and outside of working hours I've worked on a number of different ones. My latest and most challenging involved the design and development of a pair of mobile applications (both iOS & Android) as well as an accompanying marketing website built in NextJS and a NodeJS & Firebase backend complete with REST API.</p>
-									<p>I prefer to call myself a 'UI Engineer' because I feel it encompasses my skills quite nicely, I'm confident and experienced not only in Frontend Development, but also in UI Design and NodeJS Backend Development.</p>
-									<p>On the personal side of things, I enjoy hobbies such as analogue photography, hiking, metal detecting, gaming, and cooking - this isn't Tinder so I'll stop there, but feel free to ask me anything by <Link href="https://linkedin.com/in/stevenjdent" target="_blank">messaging me on LinkedIn</Link>!</p>
+									<p>I&apos;ve always enjoyed my passion projects, and outside of working hours I&apos;ve worked on a number of different ones. My latest and most challenging involved the design and development of a pair of mobile applications (both iOS & Android) as well as an accompanying marketing website built in NextJS and a NodeJS & Firebase backend complete with REST API.</p>
+									<p>I prefer to call myself a &apos;UI Engineer&apos; because I feel it encompasses my skills quite nicely, I&apos;m confident and experienced not only in Frontend Development, but also in UI Design and NodeJS Backend Development.</p>
+									<p>On the personal side of things, I enjoy hobbies such as analogue photography, hiking, metal detecting, gaming, and cooking - this isn&apos;t Tinder so I&apos;ll stop there, but feel free to ask me anything by <Link href="https://linkedin.com/in/stevenjdent" target="_blank">messaging me on LinkedIn</Link>!</p>
 									<p>Thanks for visiting!</p>
 									<p>Steven.</p>
 								</Content>
@@ -114,7 +114,7 @@ export default function Home() {
 					<Content className="gutter-large text-center text-white">
 						<Heading tag='h2' appearance='h4'>Project Showcase</Heading>
 						<p>
-							Since most of my work does not belong to me, I'm unable to show a wide variety of projects publicly. However my showcase project, SNIPPR, encompasses my entire skillset quite nicely - from backend development to UI Design and Frontend Development. SNIPPR is designed to be the software of choice for mobile barbers and hairdressers - think Uber but for hair stylists. I came up with the idea myself a few years ago and pursued it as a passion project outside of working hours.
+							Since most of my work does not belong to me, I&apos;m unable to show a wide variety of projects publicly. However my showcase project, SNIPPR, encompasses my entire skillset quite nicely - from backend development to UI Design and Frontend Development. SNIPPR is designed to be the software of choice for mobile barbers and hairdressers - think Uber but for hair stylists. I came up with the idea myself a few years ago and pursued it as a passion project outside of working hours.
 						</p>
 					</Content>
 					<Showcase />
